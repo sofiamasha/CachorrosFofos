@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos Caninos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bem-vindo ao Mundo dos Cachorros!</title>
+        <style>
+            /* Centraliza o título */
+            h1 {
+                text-align: center;
+            }
+    
+            /* Estilos para o menu de navegação */
+            nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center; /* Centraliza os links */
+                padding: 0;
+            }
+    
+            nav ul a {
+                margin: 0 15px; /* Espaçamento entre os links */
+                text-decoration: none;
+                font-size: 18px;
+                color: #000;
+                font-weight: bold;
+            }
+    
+            nav ul a:hover {
+                color: #007BFF; /* Cor ao passar o mouse */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Bem-vindo ao Mundo dos Cachorros!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#galeria">GALERIA</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+    </html>
+
+    <section id="sobre">
+        <div class="info">
+            <h2 class="centralizado">Sobre os Cachorros</h2>
+            <style>
+                h2 {
+                  text-align: center;
+                }
+              </style>
+
+            <p><h1>Os cães são, sem dúvida, uma das criaturas mais incríveis que já habitaram este planeta. Desde os tempos antigos, eles têm sido companheiros leais e fiéis, mostrando um amor incondicional que vai além do que muitas vezes conseguimos compreender. Eles são mais do que simples animais de estimação; são anjos disfarçados, enviados para nos ensinar a verdadeira essência da lealdade, do amor sem medidas e da paz que só a companhia deles pode proporcionar.</h1>
+
+                <h1>Em Provérbios 12:10, a Bíblia nos diz: "O justo cuida bem dos seus animais, mas o coração dos ímpios é cruel." Essa passagem nos convida a refletir sobre como devemos tratar os seres vivos ao nosso redor, destacando que a maneira como tratamos nossos animais de estimação é um reflexo da nossa própria bondade. Os cães, com sua capacidade de amar sem reservas, nos ensinam que o cuidado e o carinho não têm limites. Eles nos lembram de que, assim como Deus nos ama de forma incondicional, nós também devemos ser capazes de amar aqueles que nos cercam, sem esperar nada em troca.</h1>
+                
+                <h1>Em momentos de dor ou tristeza, eles se tornam verdadeiros curadores do nosso espírito, sem palavras, apenas com sua presença reconfortante. Em Mateus 7:7, somos convidados a pedir e buscar, pois Deus nos ouve. E, muitas vezes, um olhar terno de um cachorro é a resposta silenciosa que nosso coração precisa. Eles sabem quando precisamos de conforto e oferecem isso sem hesitar, como um reflexo do amor divino, puro e genuíno.</h1>
+                
+                <h1>A relação entre um humano e um cachorro é uma dança única, onde a confiança é mútua e o amor transborda em cada gesto. A Bíblia também nos ensina sobre o valor da amizade verdadeira e da parceria, como em Eclesiastes 4:9-10, que diz: "É melhor ter companhia do que estar sozinho, porque o trabalho de duas pessoas traz mais resultado." O cachorro, como nosso fiel amigo, se torna essa companhia que nos ajuda a seguir em frente, que nos encoraja a dar o próximo passo, e que nos lembra que, mesmo nas dificuldades, não estamos sozinhos.</h1>
+                
+                <h1>O valor dos cães vai além do que as palavras podem expressar. Eles são anjos em forma de animal, que nos ensinam a ser melhores, a amar mais profundamente, a viver mais plenamente. Ao olharmos para um cachorro, vemos não apenas um amigo, mas um espelho do próprio Deus, refletindo a bondade, a fidelidade e o amor que Ele tem por nós. Que possamos aprender a valorizar esses seres incríveis, que, com seus corações puros e suas almas fiéis, nos fazem mais humanos a cada dia.</h1></p>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Fotos</h2>
+        <div class="dog-gallery">
+            <!-- Imagens serão carregadas dinamicamente via JavaScript -->
+        </div>
+        <button onclick="loadMorePhotos()">Carregar Mais Fotos</button>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amigos Leais do mundo - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

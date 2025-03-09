@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #739bc4; /* Azul suave e moderno */
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #FF6F61; /* Tom coral moderno */
+    color: rgb(253, 246, 246);
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+
+nav ul li {
+    transition: transform 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD54F; /* Amarelo claro para hover */
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: #ffffff; /* Branco clássico para contraste */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#sobre .info {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sobre h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #FF6F61; /* Coral mais suave para os títulos */
+}
+
+#sobre p {
+    font-size: 1.25rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Seção Galeria */
+#galeria {
+    background-color: #F3F6F9; /
+    padding: 90px 0;
+
+    text-align: center;
+} 
+
+#galeria h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #FF6F61;
+}
+
+.dog-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.dog-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.dog-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #FFD54F;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFB74D; 
+}
+
+/* Seção Contato */
+#contato {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FF6F61;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    padding: 14px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #FF6F61; 
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #FF6F61;
+    color: white;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #FFD54F; /* Transição suave para o amarelo no hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 1rem;
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dog-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contato form {
+        width: 90%;
+    }
+}
